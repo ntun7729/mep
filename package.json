@@ -1,0 +1,11 @@
+{
+  "name": "mep-listening-simulator",
+  "version": "1.0.0",
+  "description": "MEPT Section IV listening simulator with Gemini and OpenAI-compatible exam generation.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "license": "MIT"
+}
