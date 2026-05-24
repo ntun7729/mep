@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MEPT Section IV Listening Simulator</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-row">
+          <span class="brand-pill">MEPT</span>
+          <div>
+            <h1>Section IV Listening: AI Dynamic Generator</h1>
+            <p class="subhead">Practice visual listening, multiple choice, dialogue context, ordering, and summary in one flow.</p>
+          </div>
+        </div>
+        <div class="score-wrap">
+          <div class="score-line">
+            <span id="score-display">Score: 0 / 25</span>
+            <button id="open-settings" class="ghost-button small">Settings</button>
+          </div>
+          <div class="progress-track"><div id="progress-bar" class="progress-bar"></div></div>
+        </div>
+      </header>
+
+      <nav id="tabs" class="tab-strip"></nav>
+
+      <main class="workspace">
+        <section class="control-panel">
+          <div class="panel-head">
+            <div>
+              <span class="panel-kicker">AI Control Center</span>
+              <h2>Audio and exam controls</h2>
+            </div>
+            <button id="generate-exam" class="primary-button">Generate New Set</button>
+          </div>
+          <div id="provider-summary" class="provider-summary"></div>
+
+          <div class="console-card">
+            <div class="transport">
+              <div class="transport-left">
+                <button id="play-button" class="play-button" aria-label="Play exam">▶</button>
+                <button id="stop-button" class="stop-button" aria-label="Stop audio">■</button>
+                <div id="audio-status" class="audio-status">Audio system ready</div>
+              </div>
+              <div class="transport-right">
+                <label class="slider-group">
+                  <span>Volume</span>
+                  <input id="volume-slider" type="range" min="0.75" max="2.5" step="0.05" value="1">
+                  <strong id="volume-label">100%</strong>
+                </label>
+                <label class="voice-group">
+                  <span>Voice</span>
+                  <select id="voice-select"></select>
+                </label>
+              </div>
+            </div>
+
+            <div class="timeline-card" id="timeline-card">
+              <div class="timeline-meta">
+                <strong id="timeline-title">Idle</strong>
+                <span id="timeline-repeat">Ready</span>
+              </div>
+              <p id="subtitle-text">Choose a question below, then play one clip or the full exam flow.</p>
+            </div>
+
+            <div class="transcript-card">
+              <div class="transcript-head">
+                <span>Transcript</span>
+                <button id="toggle-transcript" class="ghost-button">Toggle Text</button>
+              </div>
+              <p id="script-preview">Select a question script below, then press play.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="tab-panels" class="tab-panels"></section>
+      </main>
+    </div>
+
+    <aside id="settings-drawer" class="settings-drawer" aria-hidden="true">
+      <div class="settings-header">
+        <div>
+          <span class="panel-kicker">Provider Settings</span>
+          <h2>Gemini and OpenAI-compatible setup</h2>
+        </div>
+        <button id="close-settings" class="ghost-button">Close</button>
+      </div>
+      <div class="settings-grid">
+        <label>
+          <span>Provider</span>
+          <select id="provider-select">
+            <option value="gemini">Gemini</option>
+            <option value="openai">OpenAI-compatible</option>
+          </select>
+        </label>
+        <label>
+          <span>API Key</span>
+          <input id="api-key-input" type="password" placeholder="Paste provider API key">
+        </label>
+        <label>
+          <span>Model</span>
+          <input id="model-input" type="text" placeholder="Model name">
+        </label>
+        <label id="base-url-row">
+          <span>Base URL</span>
+          <input id="base-url-input" type="text" placeholder="https://api.openai.com/v1">
+        </label>
+      </div>
+      <p class="settings-note">Browser settings are stored on this device only. If a field is empty, the server will fall back to environment values.</p>
+    </aside>
+
+    <div id="toast" class="toast hidden"></div>
+
+    <template id="task-card-template">
+      <article class="task-card">
+        <div class="question-head">
+          <span class="question-label"></span>
+          <button class="audio-link" type="button">Play Track</button>
+        </div>
+        <h3 class="question-title"></h3>
+        <div class="question-body"></div>
+      </article>
+    </template>
+
+    <script src="/app.js"></script>
+  </body>
+  </html>
