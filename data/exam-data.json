@@ -1,0 +1,248 @@
+{
+  "task1": [
+    {
+      "id": 1,
+      "question": "Where is David working this afternoon?",
+      "options": [
+        { "key": "A", "label": "Galley" },
+        { "key": "B", "label": "Engine Room" },
+        { "key": "C", "label": "Paint Locker" }
+      ],
+      "correct": "C",
+      "script": "Is David in the galley helping the cook this afternoon? No, he finished helping with lunch. The Chief Officer sent him to the paint locker to organize the brushes and storage bins before tomorrow's work.",
+      "visualType": "Q1_VISUAL"
+    },
+    {
+      "id": 2,
+      "question": "What is the chief officer inspecting?",
+      "options": [
+        { "key": "A", "label": "Lifebuoy" },
+        { "key": "B", "label": "Fire Extinguisher" },
+        { "key": "C", "label": "Pilot Ladder" }
+      ],
+      "correct": "B",
+      "script": "Is the Chief Officer checking the pilot ladder right now? Not yet. He is inspecting the portable fire extinguishers and confirming the pressure and safety seals.",
+      "visualType": "Q2_VISUAL"
+    },
+    {
+      "id": 3,
+      "question": "What time will the pilot boat arrive?",
+      "options": [
+        { "key": "A", "label": "04:00" },
+        { "key": "B", "label": "08:30" },
+        { "key": "C", "label": "10:15" }
+      ],
+      "correct": "B",
+      "script": "The first plan was four o'clock, but the vessel was delayed. The pilot boat is now confirmed for eight thirty, so the ladder must be ready by eight fifteen.",
+      "visualType": "Q3_VISUAL"
+    },
+    {
+      "id": 4,
+      "question": "Which flag is the ship flying?",
+      "options": [
+        { "key": "A", "label": "Alfa Flag" },
+        { "key": "B", "label": "Bravo Flag" },
+        { "key": "C", "label": "Quebec Flag" }
+      ],
+      "correct": "B",
+      "script": "The blue and white Alfa flag is not in use today. The yellow Quebec flag was lowered earlier. Because cargo is being handled now, the ship is flying the red Bravo flag.",
+      "visualType": "Q4_VISUAL"
+    },
+    {
+      "id": 5,
+      "question": "What is the safety officer holding?",
+      "options": [
+        { "key": "A", "label": "Anemometer" },
+        { "key": "B", "label": "Gas Detector" },
+        { "key": "C", "label": "UHF Radio" }
+      ],
+      "correct": "B",
+      "script": "The radio is clipped to the belt and the anemometer is on the bridge. The safety officer is holding a gas detector to check tank-entry conditions.",
+      "visualType": "Q5_VISUAL"
+    },
+    {
+      "id": 6,
+      "question": "Which tank is currently being filled?",
+      "options": [
+        { "key": "A", "label": "Ballast Tank" },
+        { "key": "B", "label": "Fuel Oil Tank" },
+        { "key": "C", "label": "Fresh Water Tank" }
+      ],
+      "correct": "A",
+      "script": "Fresh water loading is already finished, and bunkering ended earlier. Sea water is being pumped into the ballast tank to adjust the trim.",
+      "visualType": "Q6_VISUAL"
+    },
+    {
+      "id": 7,
+      "question": "Where did the oil spill occur?",
+      "options": [
+        { "key": "A", "label": "Bilge" },
+        { "key": "B", "label": "Deck Scupper" },
+        { "key": "C", "label": "Manifold Flange" }
+      ],
+      "correct": "C",
+      "script": "The bilge is dry and the scuppers were plugged before transfer. The drip was found at the manifold flange during hose connection.",
+      "visualType": "Q7_VISUAL"
+    },
+    {
+      "id": 8,
+      "question": "Which crew member is on watch?",
+      "options": [
+        { "key": "A", "label": "Ken" },
+        { "key": "B", "label": "Min" },
+        { "key": "C", "label": "Zaw" }
+      ],
+      "correct": "C",
+      "script": "Ken is resting and Min is doing deck maintenance. Zaw is the watchkeeper on the bridge until four o'clock.",
+      "visualType": "Q8_VISUAL"
+    }
+  ],
+  "task2": [
+    {
+      "id": 1,
+      "question": "You will hear an engineer speaking. What worries him?",
+      "options": [
+        { "key": "A", "label": "Rising temperature" },
+        { "key": "B", "label": "Food supply" },
+        { "key": "C", "label": "Navigation system" }
+      ],
+      "correct": "A",
+      "script": "The inspection is complete, but there is a paint smell near the locker and the temperature there seems to be rising."
+    },
+    {
+      "id": 2,
+      "question": "You will hear a cook speaking. Why did he change the menu?",
+      "options": [
+        { "key": "A", "label": "To save money" },
+        { "key": "B", "label": "Supplies were limited" },
+        { "key": "C", "label": "Not enough time" }
+      ],
+      "correct": "B",
+      "script": "Fresh milk is out of stock at the next port, so the cook must switch to milk powder for tomorrow's meals."
+    },
+    {
+      "id": 3,
+      "question": "You will hear two officers talking. Why is the meeting delayed?",
+      "options": [
+        { "key": "A", "label": "Someone is absent" },
+        { "key": "B", "label": "Work is not finished" },
+        { "key": "C", "label": "Captain changed plans" }
+      ],
+      "correct": "B",
+      "script": "The lockout steps and safety tags must be finished before the team can gather for the meeting."
+    },
+    {
+      "id": 4,
+      "question": "You will hear two sailors talking. What is the main reason Kim is tired?",
+      "options": [
+        { "key": "A", "label": "Worked overnight" },
+        { "key": "B", "label": "Feels unwell" },
+        { "key": "C", "label": "Exercised too much" }
+      ],
+      "correct": "B",
+      "script": "Kim says he is exhausted because he has been feeling sick since the morning watch."
+    },
+    {
+      "id": 5,
+      "question": "You will hear two crew members talking. Why is Liam happy?",
+      "options": [
+        { "key": "A", "label": "Completed training" },
+        { "key": "B", "label": "Shorter shift" },
+        { "key": "C", "label": "Received praise" }
+      ],
+      "correct": "C",
+      "script": "The bosun praised Liam in front of the deck crew for handling the mooring line safely and quickly."
+    },
+    {
+      "id": 6,
+      "question": "You will hear two sailors talking. What are they planning?",
+      "options": [
+        { "key": "A", "label": "A repair" },
+        { "key": "B", "label": "A training session" },
+        { "key": "C", "label": "A celebration" }
+      ],
+      "correct": "A",
+      "script": "The bilge alarm is active, so they plan to inspect the pumps and repair any leak they find."
+    }
+  ],
+  "task3": [
+    {
+      "id": 1,
+      "question": "What did the purifier alarm show?",
+      "options": [
+        { "key": "A", "label": "High water pressure" },
+        { "key": "B", "label": "Low oil flow" },
+        { "key": "C", "label": "High temperature" }
+      ],
+      "correct": "A"
+    },
+    {
+      "id": 2,
+      "question": "What was changed during yesterday's maintenance?",
+      "options": [
+        { "key": "A", "label": "Purifier bearings" },
+        { "key": "B", "label": "Gravity disc" },
+        { "key": "C", "label": "Heater sensors" }
+      ],
+      "correct": "B"
+    },
+    {
+      "id": 3,
+      "question": "What does the Chief Engineer worry about if there are small leaks?",
+      "options": [
+        { "key": "A", "label": "Wasted oil" },
+        { "key": "B", "label": "Damage to bearings" },
+        { "key": "C", "label": "Fuel consumption" }
+      ],
+      "correct": "B"
+    },
+    {
+      "id": 4,
+      "question": "What is the cadet's initial action before opening?",
+      "options": [
+        { "key": "A", "label": "Isolate feed pump" },
+        { "key": "B", "label": "Clean bilge" },
+        { "key": "C", "label": "Restart separator" }
+      ],
+      "correct": "A"
+    },
+    {
+      "id": 5,
+      "question": "What can we understand about the Chief Engineer?",
+      "options": [
+        { "key": "A", "label": "Prioritizes speed" },
+        { "key": "B", "label": "Teaches safety step-by-step" },
+        { "key": "C", "label": "Strict on time" }
+      ],
+      "correct": "B"
+    },
+    {
+      "id": 6,
+      "question": "What is the cadet going to do first before working?",
+      "options": [
+        { "key": "A", "label": "Open purifier bowl" },
+        { "key": "B", "label": "Check tools and manual" },
+        { "key": "C", "label": "Drain water tank" }
+      ],
+      "correct": "B"
+    }
+  ],
+  "task3Script": "Cadet, did you hear the lube oil purifier alarm? Yes, Chief, it showed high water pressure inside the bowl. That usually means the sealing water is leaking or the gravity disc size is incorrect. Did we change the gravity disc yesterday? Yes, sir, during maintenance. Then isolate the feed pump first and prepare the tools. I will check the manual before we open the purifier. Good. Always follow the safety steps before touching the unit.",
+  "task4": {
+    "correctOrder": [
+      "The general emergency alarm sounded continuously throughout the vessel.",
+      "All crew members assembled at their designated muster stations with their lifejackets on.",
+      "The lifeboats were prepared and swung out by the deck officers.",
+      "The crew boarded the survival craft systematically.",
+      "The lifeboat was lowered safely to the water level."
+    ],
+    "scrambledOrder": [
+      "The crew boarded the survival craft systematically.",
+      "The general emergency alarm sounded continuously throughout the vessel.",
+      "The lifeboat was lowered safely to the water level.",
+      "All crew members assembled at their designated muster stations with their lifejackets on.",
+      "The lifeboats were prepared and swung out by the deck officers."
+    ],
+    "script": "First, the general emergency alarm sounded throughout the vessel. Next, the crew assembled at the muster stations with lifejackets on. Then the deck officers prepared and swung out the lifeboats. After that, the crew boarded the survival craft in order. Finally, the lifeboat was lowered safely to the water."
+  }
+}
