@@ -7,7 +7,9 @@
     "start": "node server.js",
     "dev": "node --watch server.js",
     "worker:dev": "wrangler dev",
-    "deploy": "wrangler deploy"
+    "secrets:bulk": "wrangler secret bulk .env",
+    "deploy": "wrangler deploy",
+    "deploy:env": "wrangler deploy --secrets-file .env"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
