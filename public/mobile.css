@@ -1,0 +1,113 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-bottom: 28px;
+  }
+
+  .app-shell {
+    width: calc(100% - 16px);
+    margin-top: 8px;
+  }
+
+  .topbar {
+    position: static;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 18px;
+  }
+
+  .brand-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    align-items: start;
+  }
+
+  .brand-row > div {
+    min-width: 0;
+  }
+
+  .brand-row h1 {
+    font-size: clamp(20px, 6vw, 25px);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+  }
+
+  .subhead {
+    display: -webkit-box;
+    margin-top: 5px;
+    max-width: none;
+    overflow: hidden;
+    color: rgba(151, 163, 194, 0.88);
+    font-size: 13px;
+    line-height: 1.35;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .brand-pill {
+    width: max-content;
+    padding: 7px 11px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+  .score-wrap {
+    gap: 7px;
+  }
+
+  .score-line {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .ghost-button.small {
+    padding: 7px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+  }
+
+  .progress-track {
+    height: 8px;
+  }
+
+  .tab-strip {
+    gap: 10px;
+    padding: 10px 2px 8px;
+  }
+
+  .tab-button {
+    padding: 11px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+  }
+
+  .control-panel,
+  .task-card,
+  .task4-board,
+  .summary-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .topbar {
+    padding: 10px;
+  }
+
+  .brand-row h1 {
+    font-size: clamp(19px, 5.8vw, 23px);
+  }
+
+  .subhead {
+    font-size: 12px;
+  }
+
+  .brand-pill {
+    font-size: 16px;
+  }
+}
