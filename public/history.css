@@ -1,0 +1,64 @@
+.saved-set-panel {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid var(--panel-border);
+  border-radius: 20px;
+  background: rgba(10, 16, 33, 0.82);
+}
+
+.saved-set-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.saved-set-head h3 {
+  margin: 5px 0 0;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.saved-set-count {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.saved-set-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto auto;
+  gap: 10px;
+  margin-top: 14px;
+  align-items: center;
+}
+
+.saved-set-meta {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.ghost-button.danger {
+  color: var(--danger);
+}
+
+@media (max-width: 640px) {
+  .saved-set-panel {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .saved-set-head {
+    display: grid;
+  }
+
+  .saved-set-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .saved-set-controls select {
+    grid-column: 1 / -1;
+  }
+}
