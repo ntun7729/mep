@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>MEPT Section IV Listening Simulator</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/history.css">
     <link rel="stylesheet" href="/mobile.css">
   </head>
   <body>
@@ -38,6 +39,23 @@
             <button id="generate-exam" class="primary-button">Generate New Set</button>
           </div>
           <div id="provider-summary" class="provider-summary"></div>
+
+          <div class="saved-set-panel">
+            <div class="saved-set-head">
+              <div>
+                <span class="panel-kicker">Saved Sets</span>
+                <h3>Recall generated practice sets</h3>
+              </div>
+              <span id="saved-set-count" class="saved-set-count">0 saved</span>
+            </div>
+            <div class="saved-set-controls">
+              <select id="saved-set-select" aria-label="Saved generated practice sets"></select>
+              <button id="load-saved-set" class="ghost-button" type="button">Load</button>
+              <button id="delete-saved-set" class="ghost-button danger" type="button">Delete</button>
+              <button id="load-original-set" class="ghost-button" type="button">Original</button>
+            </div>
+            <p id="saved-set-meta" class="saved-set-meta">Generated sets will be saved on this device.</p>
+          </div>
 
           <div class="console-card">
             <div class="transport">
