@@ -35,28 +35,42 @@ Wrangler serves the static files in `public/` and the Worker API from `src/worke
 ```bash
 npm install
 npx wrangler login
+npm run secrets:bulk
 npm run deploy
 ```
 
 After deployment, Wrangler prints the Worker URL.
 
-## Cloudflare secrets
+## Cloudflare secrets from `.env`
 
-Use Wrangler secrets for server-side provider defaults:
+Keep your real values in `.env`. The file is already ignored by Git and can be uploaded to Cloudflare in one step:
 
 ```bash
-npx wrangler secret put GEMINI_API_KEY
-npx wrangler secret put OPENAI_API_KEY
-npx wrangler secret put OPENAI_BASE_URL
-npx wrangler secret put GEMINI_MODEL
-npx wrangler secret put OPENAI_MODEL
+npm run secrets:bulk
 ```
 
-Only set the secrets you need. The browser settings panel can still override provider values for the current device.
+That script runs:
+
+```bash
+wrangler secret bulk .env
+```
+
+Example `.env` values:
+
+```bash
+DEFAULT_PROVIDER=gemini
+GEMINI_API_KEY=your_gemini_key
+GEMINI_MODEL=gemini-2.5-flash
+OPENAI_API_KEY=your_openai_compatible_key
+OPENAI_BASE_URL=https://api.openai.com/v1
+OPENAI_MODEL=gpt-4.1-mini
+```
+
+Only include the values you need. Do not commit `.env`.
 
 ## Configuration
 
-Copy `.env.example` to `.env` and fill in the values you want to use for the Node.js server.
+Copy `.env.example` to `.env` and fill in the values you want to use for the Node.js server and Cloudflare secrets.
 
 ### Gemini
 
